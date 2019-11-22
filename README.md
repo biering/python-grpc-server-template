@@ -2,7 +2,7 @@
 
 ## Usage
 
-Use one of the following options to use the template.
+Use one of the following options to use the template:
 
 * Use this template as described [here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
 * Clone this template `git clone https://github.com/chryb/python-package-template.git` and remove git within the dictionary `rm -rf .git`.
@@ -13,7 +13,7 @@ Use one of the following options to use the template.
 2. Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
 3. (Update) To update conda run `conda update conda`
 
-### After Checkout
+### Setup Environment
 
 Run this command to create the environment:
 
@@ -21,7 +21,7 @@ Run this command to create the environment:
 conda env create -f environment.yml --prefix ./env
 ```
 
-### Activate/Deactivate
+### Activate/Deactivate Environment
 
 To activate the created environment:
 
@@ -35,6 +35,16 @@ To deactivate the actual environment:
 conda deactivate
 ```
 
+### Updating an Environment
+
+To update the environment, all you need to do is update the contents of your `environment.yml` file accordingly and then run the following command:
+
+```bash
+conda env update --prefix ./env --file environment.yml  --prune
+```
+
+### Discover Environments
+
 To list all conda environments:
 
 ```bash
@@ -43,4 +53,8 @@ conda env list
 conda info --envs
 ```
 
+### Removing an Environment
+
 To remove the environment just remove the `.env` dictionary.
+
+For more information see the conda [documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
