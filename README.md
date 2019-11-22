@@ -58,3 +58,15 @@ conda info --envs
 To remove the environment just remove the `.env` dictionary.
 
 For more information see the conda [documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
+
+## Features
+
+Don't forget to start with activating the environment with `conda activate ./env`.
+
+### Linting
+
+Linting the package is powered by **flake8**. Just run `flake8 src/` to lint the project or `flake8 src/file.py` to lint a specific file.
+
+### Testing
+
+Run tests by using [pytest](http://doc.pytest.org/en/latest/contents.html) with `pytest -q tests/test.py`.
