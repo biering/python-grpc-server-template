@@ -1,13 +1,29 @@
-# Python Package Template
+# Python GRPC Server Template
+
+A template project for a Python GRPC Server w/ Protobuf & Anaconda. Example used from [grpc](https://github.com/grpc/grpc) repository.
+
+|python|pip|grpcio|grpcio-tools|
+|:--:|:--:|:--:|:--:|
+|3.7|19.3.1|1.25.0|1.25.0|
 
 ## Usage
+
+(1) First install the environment described in section: **Install**.
+
+(2) Compile client/server-side code with the following command:
+
+```bash
+make proto
+```
+
+(3) To test: Run `python src/greeter_server.py` and `python src/greeter_client.py` in two separat python shells.
+
+## Install
 
 Use one of the following options to use the template:
 
 * Use this template as described [here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
 * Clone this template `git clone https://github.com/chryb/python-package-template.git` and remove git within the dictionary `rm -rf .git`.
-
-## Install Dependencies
 
 1. Install **Python3** and **pip3**
 2. Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
