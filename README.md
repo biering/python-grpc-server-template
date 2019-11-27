@@ -1,6 +1,6 @@
 # Python GRPC Server Template
 
-A template project for a Python GRPC Server w/ Protobuf & Anaconda. Example used from [grpc](https://github.com/grpc/grpc) repository.
+A minimal template to start with a Python GRPC Server w/ Protobuf, Conda. Example used from [grpc](https://github.com/grpc/grpc) repository.
 
 |python|pip|grpcio|grpcio-tools|
 |:--:|:--:|:--:|:--:|
