@@ -16,7 +16,19 @@ A minimal template to start with a Python GRPC Server w/ Protobuf, Conda. Exampl
 make proto
 ```
 
-(3) To test: Run `python src/greeter_server.py` and `python src/greeter_client.py` in two separat python shells.
+(3) To test: Run `python -m src.main` and `python -m src.greeter_client` in two separat python shells.
+
+(4) Normally, you would start the service by running `python -m src.main`.
+
+### Structure
+
+|Package|Description|
+|:--:|:--|
+|`grpc`|GRPC Utils & Server|
+|`models`|Model Definitions|
+|`proto`|Generated Protobuf files|
+|`services`|Implementation of the Protobuf API|
+|`store`|Global Service Store|
 
 ## Install
 

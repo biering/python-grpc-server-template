@@ -1,8 +1,8 @@
 import logging
 
-from grpc_server import GRPCServer
-from proto import helloworld_pb2_grpc
-from greeter import Greeter
+from .grpc.server import GRPCServer
+from .proto import helloworld_pb2_grpc
+from .services.greeter import Greeter
 
 
 def add_services(server):
