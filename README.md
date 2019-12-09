@@ -71,15 +71,13 @@ To update the environment, all you need to do is update the contents of your `en
 conda env update --prefix ./env --file environment.yml  --prune
 ```
 
+### List Packages
+
+To list all installed packages in the environment run `conda list`
+
 ### Discover Environments
 
-To list all conda environments:
-
-```bash
-conda env list
-# or
-conda info --envs
-```
+To list all conda environments run `conda env list` or `conda info --envs`
 
 ### Removing an Environment
 
